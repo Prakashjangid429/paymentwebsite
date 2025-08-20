@@ -1,0 +1,184 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Updated color tokens to match pink and violet design brief */
+  --background: oklch(1 0 0); /* #FFFFFF */
+  --foreground: oklch(0.29 0.15 320); /* #4A0042 */
+  --card: oklch(0.95 0.05 320); /* #F3E5F5 */
+  --card-foreground: oklch(0.29 0.15 320); /* #4A0042 */
+  --popover: oklch(1 0 0); /* #FFFFFF */
+  --popover-foreground: oklch(0.29 0.15 320); /* #4A0042 */
+  --primary: oklch(0.55 0.25 340); /* #D5006D */
+  --primary-foreground: oklch(1 0 0); /* #FFFFFF */
+  --secondary: oklch(0.55 0.15 290); /* #8E24AA */
+  --secondary-foreground: oklch(1 0 0); /* #FFFFFF */
+  --muted: oklch(0.95 0.05 320); /* #F3E5F5 */
+  --muted-foreground: oklch(0.29 0.15 320); /* #4A0042 */
+  --accent: oklch(0.55 0.15 290); /* #8E24AA */
+  --accent-foreground: oklch(1 0 0); /* #FFFFFF */
+  --destructive: oklch(0.55 0.25 340); /* #D5006D */
+  --destructive-foreground: oklch(1 0 0); /* #FFFFFF */
+  --border: oklch(0.88 0 0); /* #E0E0E0 */
+  --input: oklch(0.95 0.05 320); /* #F3E5F5 */
+  --ring: oklch(0.55 0.25 340 / 0.5); /* rgba(213, 0, 109, 0.5) */
+  --chart-1: oklch(0.55 0.25 340); /* #D5006D */
+  --chart-2: oklch(0.55 0.15 290); /* #8E24AA */
+  --chart-3: oklch(0.29 0.15 320); /* #4A0042 */
+  --chart-4: oklch(0.95 0.05 320); /* #F3E5F5 */
+  --chart-5: oklch(1 0 0); /* #FFFFFF */
+  --radius: 0.5rem;
+  --sidebar: oklch(0.95 0.05 320); /* #F3E5F5 */
+  --sidebar-foreground: oklch(0.29 0.15 320); /* #4A0042 */
+  --sidebar-primary: oklch(0.55 0.25 340); /* #D5006D */
+  --sidebar-primary-foreground: oklch(1 0 0); /* #FFFFFF */
+  --sidebar-accent: oklch(0.55 0.15 290); /* #8E24AA */
+  --sidebar-accent-foreground: oklch(1 0 0); /* #FFFFFF */
+  --sidebar-border: oklch(0.88 0 0); /* #E0E0E0 */
+  --sidebar-ring: oklch(0.55 0.25 340 / 0.5); /* rgba(213, 0, 109, 0.5) */
+}
+
+.dark {
+  /* Updated dark mode tokens to maintain pink/violet theme */
+  --background: oklch(0.15 0.05 320); /* Dark violet background */
+  --foreground: oklch(0.95 0.05 320); /* Light text */
+  --card: oklch(0.2 0.05 320); /* Dark card background */
+  --card-foreground: oklch(0.95 0.05 320); /* Light card text */
+  --popover: oklch(0.15 0.05 320); /* Dark popover */
+  --popover-foreground: oklch(0.95 0.05 320); /* Light popover text */
+  --primary: oklch(0.65 0.25 340); /* Lighter pink for dark mode */
+  --primary-foreground: oklch(0.15 0.05 320); /* Dark text on primary */
+  --secondary: oklch(0.65 0.15 290); /* Lighter violet for dark mode */
+  --secondary-foreground: oklch(0.15 0.05 320); /* Dark text on secondary */
+  --muted: oklch(0.25 0.05 320); /* Dark muted background */
+  --muted-foreground: oklch(0.7 0.05 320); /* Muted text */
+  --accent: oklch(0.65 0.15 290); /* Lighter violet accent */
+  --accent-foreground: oklch(0.15 0.05 320); /* Dark text on accent */
+  --destructive: oklch(0.65 0.25 340); /* Lighter pink for destructive */
+  --destructive-foreground: oklch(0.15 0.05 320); /* Dark text on destructive */
+  --border: oklch(0.3 0.05 320); /* Dark border */
+  --input: oklch(0.25 0.05 320); /* Dark input background */
+  --ring: oklch(0.65 0.25 340 / 0.5); /* Pink focus ring */
+  --chart-1: oklch(0.65 0.25 340);
+  --chart-2: oklch(0.65 0.15 290);
+  --chart-3: oklch(0.8 0.1 320);
+  --chart-4: oklch(0.25 0.05 320);
+  --chart-5: oklch(0.15 0.05 320);
+  --sidebar: oklch(0.2 0.05 320);
+  --sidebar-foreground: oklch(0.95 0.05 320);
+  --sidebar-primary: oklch(0.65 0.25 340);
+  --sidebar-primary-foreground: oklch(0.15 0.05 320);
+  --sidebar-accent: oklch(0.65 0.15 290);
+  --sidebar-accent-foreground: oklch(0.15 0.05 320);
+  --sidebar-border: oklch(0.3 0.05 320);
+  --sidebar-ring: oklch(0.65 0.25 340 / 0.5);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Added custom animations for scroll effects and smooth transitions */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse-glow {
+  0%,
+  100% {
+    box-shadow: 0 0 20px rgba(213, 0, 109, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(213, 0, 109, 0.6);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.animate-slide-in-left {
+  animation: slideInLeft 0.6s ease-out;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* Added smooth scrolling for better UX */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Added gradient backgrounds for hero sections */
+.gradient-bg {
+  background: linear-gradient(135deg, oklch(0.95 0.05 320) 0%, oklch(1 0 0) 100%);
+}
+
+.gradient-bg-dark {
+  background: linear-gradient(135deg, oklch(0.2 0.05 320) 0%, oklch(0.15 0.05 320) 100%);
+}
