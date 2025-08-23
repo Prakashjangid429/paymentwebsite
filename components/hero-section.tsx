@@ -39,14 +39,14 @@ export function HeroSection() {
         <div
           className={`transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
         >
-          <div className="mb-6 mt-20">
+          <div className="mb-6 mt-28">
             <div className="flex items-center justify-center mb-4">
               <div className="flex items-center space-x-1 bg-primary/10 px-4 py-2 rounded-full border border-primary/20">
                 <Star className="h-4 w-4 text-primary fill-current" />
                 <span className="text-sm font-semibold text-primary">Trusted by 50,000+ Indian businesses</span>
               </div>
             </div>
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-black font-heading text-foreground mb-6 leading-tight">
+            <h1 className="text-3xl md:text-5xl lg:text-5xl font-black font-heading text-foreground mb-6 leading-tight">
               <span className="block animate-fade-in-up">India's Leading</span>
               <span className=" bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent animate-fade-in-up delay-200">
                 Payment Gateway
@@ -55,8 +55,8 @@ export function HeroSection() {
             </h1>
           </div>
 
-          <p className="text-xl md:text-2xl lg:text-3xl text-muted-foreground mb-12 max-w-4xl mx-auto leading-relaxed font-medium">
-            Accept UPI, cards, wallets & bank transfers with just 4% transaction fee.
+          <p className="text-xl md:text-2xl lg:text-2xl text-muted-foreground mb-12 max-w-4xl mx-auto leading-relaxed font-medium">
+            Accept UPI, cards, wallets & bank transfers with just 4.5% transaction fee.
             <span className="block mt-2 text-primary font-semibold">
               Built for Bharat, trusted by businesses nationwide.
             </span>
@@ -98,23 +98,7 @@ export function HeroSection() {
             </Button>
           </div>
 
-          <div className="flex flex-col items-center space-y-6">
-            <p className="text-lg text-muted-foreground font-medium">RBI Authorized & Compliant</p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-muted-foreground">
-              <div className="flex items-center justify-center space-x-3 bg-card/50 backdrop-blur-sm px-6 py-4 rounded-xl border border-border hover:border-primary/50 transition-all duration-300">
-                <CheckCircle className="h-6 w-6 text-emerald-500" />
-                <span className="text-base font-semibold">RBI Authorized</span>
-              </div>
-              <div className="flex items-center justify-center space-x-3 bg-card/50 backdrop-blur-sm px-6 py-4 rounded-xl border border-border hover:border-primary/50 transition-all duration-300">
-                <CheckCircle className="h-6 w-6 text-blue-500" />
-                <span className="text-base font-semibold">PCI DSS Level 1</span>
-              </div>
-              <div className="flex items-center justify-center space-x-3 bg-card/50 backdrop-blur-sm px-6 py-4 rounded-xl border border-border hover:border-primary/50 transition-all duration-300">
-                <CheckCircle className="h-6 w-6 text-purple-500" />
-                <span className="text-base font-semibold">ISO 27001 Certified</span>
-              </div>
-            </div>
-          </div>
+
         </div>
       </div>
 

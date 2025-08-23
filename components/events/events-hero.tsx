@@ -57,7 +57,7 @@ export function EventsHero() {
               <span className="text-base font-semibold text-primary">{eventTypes[currentEventType].name} & More</span>
             </div>
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-black font-heading text-foreground mb-6 leading-tight">
-              <span className="block">PayFlow</span>
+              <span className="block">Spiral Pay</span>
               <span className="block bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
                 Events
               </span>

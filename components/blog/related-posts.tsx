@@ -35,7 +35,7 @@ export function RelatedPosts({ currentPost }: RelatedPostsProps) {
 
   return (
     <section className="py-16 bg-card">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold font-heading text-card-foreground mb-4">Related Articles</h2>
           <p className="text-xl text-muted-foreground">Continue reading with these related posts</p>

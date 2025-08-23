@@ -1,11 +1,10 @@
-import { Navigation } from "@/components/navigation"
-import { Footer } from "@/components/footer"
 import { HeroSection } from "@/components/hero-section"
 import { StatsSection } from "@/components/stats-section"
 import { ServicesOverview } from "@/components/services-overview"
 import { PartnerSlider } from "@/components/partner-slider"
 import { TestimonialsSection } from "@/components/testimonials-section"
 import { CTASection } from "@/components/cta-section"
+import { ValuesSection } from "@/components/about/values-section"
 
 export default function HomePage() {
   return (
@@ -15,6 +14,7 @@ export default function HomePage() {
         <StatsSection />
         <ServicesOverview />
         <PartnerSlider />
+        <ValuesSection />
         <TestimonialsSection />
         <CTASection />
       </main>

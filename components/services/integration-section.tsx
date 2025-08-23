@@ -96,7 +96,7 @@ export function IntegrationSection() {
           <div className="bg-card p-8 rounded-2xl border border-border">
             <h3 className="text-2xl font-bold font-heading text-card-foreground mb-4">Ready to Get Started?</h3>
             <p className="text-muted-foreground mb-6">
-              Our technical team is here to help you integrate PayFlow into your platform quickly and efficiently.
+              Our technical team is here to help you integrate Spiral Pay into your platform quickly and efficiently.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="text-lg px-8 py-4">

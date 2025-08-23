@@ -38,7 +38,7 @@ export default function ContactPage() {
       {/* Hero Section */}
       <section className="pt-32 pb-16 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
+          <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
             Get in <span className="text-primary">Touch</span>
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -128,11 +128,10 @@ export default function ContactPage() {
                     <div>
                       <h3 className="font-semibold mb-1">Headquarters</h3>
                       <p className="text-muted-foreground">
-                        123 Payment Street
+                        jhotwara
+                        Jaipur
                         <br />
-                        Financial District
-                        <br />
-                        New York, NY 10004
+                        Rajasthan, 302012
                       </p>
                     </div>
                   </div>
@@ -151,7 +150,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h3 className="font-semibold mb-1">Email</h3>
-                      <p className="text-muted-foreground">contact@paymentgateway.com</p>
+                      <p className="text-muted-foreground">spiralpay@gmail.com</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
@@ -171,25 +170,6 @@ export default function ContactPage() {
                   </div>
                 </div>
               </div>
-
-              {/* Office Locations */}
-              <Card className="p-6">
-                <h3 className="text-xl font-bold mb-4">Global Offices</h3>
-                <div className="space-y-4">
-                  <div>
-                    <h4 className="font-semibold">London Office</h4>
-                    <p className="text-sm text-muted-foreground">25 Fintech Lane, London EC2V 8RF, UK</p>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold">Singapore Office</h4>
-                    <p className="text-sm text-muted-foreground">10 Marina Boulevard, Singapore 018983</p>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold">Sydney Office</h4>
-                    <p className="text-sm text-muted-foreground">Level 15, 1 Macquarie Place, Sydney NSW 2000</p>
-                  </div>
-                </div>
-              </Card>
             </div>
           </div>
         </div>

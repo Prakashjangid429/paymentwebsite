@@ -32,14 +32,11 @@ export function Footer() {
           {/* Company Info */}
           <div className="space-y-4">
             <Link href="/" className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-lg font-heading">P</span>
-              </div>
-              <span className="text-xl font-bold font-heading text-card-foreground">PayFlow</span>
+              <img src="/logo.png" alt="" className="h-48" />
             </Link>
             <p className="text-muted-foreground text-sm leading-relaxed">
               Secure, fast, and reliable payment processing solutions for businesses of all sizes. Join thousands of
-              companies who trust PayFlow.
+              companies who trust Spiralpay.
             </p>
             <div className="flex space-x-4">
               <Button variant="ghost" size="sm" className="p-2">
@@ -97,7 +94,7 @@ export function Footer() {
             <div className="space-y-3">
               <div className="flex items-center space-x-2 text-sm text-muted-foreground">
                 <Mail className="h-4 w-4" />
-                <span>support@payflow.com</span>
+                <span>spiralpay@gmail.com</span>
               </div>
               <div className="flex items-center space-x-2 text-sm text-muted-foreground">
                 <Phone className="h-4 w-4" />
@@ -105,7 +102,7 @@ export function Footer() {
               </div>
               <div className="flex items-center space-x-2 text-sm text-muted-foreground">
                 <MapPin className="h-4 w-4" />
-                <span>San Francisco, CA</span>
+                <span>jhotwara Jaipur ,Rajasthan 302012</span>
               </div>
             </div>
 
@@ -123,7 +120,7 @@ export function Footer() {
         {/* Bottom Section */}
         <div className="mt-8 pt-8 border-t border-border">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <p className="text-sm text-muted-foreground">© 2024 PayFlow. All rights reserved.</p>
+            <p className="text-sm text-muted-foreground">© 2024 Spiralpay. All rights reserved.</p>
             <div className="flex space-x-6">
               {legal.map((item) => (
                 <Link

@@ -21,10 +21,9 @@ const openSans = Open_Sans({
 })
 
 export const metadata: Metadata = {
-  title: "PayFlow - Modern Payment Gateway Solutions",
+  title: "spiral pay - Modern Payment Gateway Solutions",
   description:
-    "Secure, fast, and reliable payment processing for businesses of all sizes. Join thousands of companies who trust PayFlow for their payment needs.",
-  generator: "v0.app",
+    "Secure, fast, and reliable payment processing for businesses of all sizes. Join thousands of companies who trust Spiral Pay for their payment needs.",
 }
 
 export default function RootLayout({

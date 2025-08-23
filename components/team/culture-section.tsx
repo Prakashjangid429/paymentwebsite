@@ -61,7 +61,7 @@ export function CultureSection() {
     <section id="culture-section" className="py-20 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold font-heading text-foreground mb-4">Why Work at PayFlow?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold font-heading text-foreground mb-4">Why Work at Spiral Pay?</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             We believe in creating an environment where everyone can do their best work and grow their careers
           </p>
@@ -94,7 +94,7 @@ export function CultureSection() {
             </h3>
             <p className="text-primary-foreground/90 mb-6 max-w-2xl mx-auto">
               We're always looking for talented individuals who share our passion for innovation and customer success.
-              Check out our open positions and become part of the PayFlow family.
+              Check out our open positions and become part of the Spiral Pay family.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button

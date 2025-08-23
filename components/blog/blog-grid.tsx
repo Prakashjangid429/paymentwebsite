@@ -116,21 +116,7 @@ export function BlogGrid() {
               <h3 className="text-xl font-semibold font-heading text-card-foreground mb-3 leading-tight group-hover:text-primary transition-colors">
                 <Link href={`/blog/${post.slug}`}>{post.title}</Link>
               </h3>
-              <p className="text-muted-foreground mb-4 leading-relaxed line-clamp-3">{post.excerpt}</p>
-              <div className="flex items-center justify-between text-sm text-muted-foreground mb-4">
-                <div className="flex items-center space-x-2">
-                  <img
-                    src={post.author.avatar || "/placeholder.svg"}
-                    alt={post.author.name}
-                    className="w-6 h-6 rounded-full object-cover"
-                  />
-                  <span>{post.author.name}</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <Clock className="h-4 w-4" />
-                  <span>{post.readTime} min</span>
-                </div>
-              </div>
+              {/* <p className="text-muted-foreground mb-4 leading-relaxed line-clamp-3">{post.excerpt}</p> */}
               <div className="flex items-center justify-between">
                 <span className="text-sm text-muted-foreground">{formatDate(post.publishedAt)}</span>
                 <Button variant="ghost" size="sm" asChild className="group/btn">

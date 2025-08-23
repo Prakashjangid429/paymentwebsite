@@ -25,7 +25,6 @@ export function Navigation() {
     { name: "About", href: "/about" },
     { name: "Services", href: "/services" },
     { name: "Blog", href: "/blog" },
-    { name: "Events", href: "/events" },
     { name: "Team", href: "/team" },
     { name: "Contact", href: "/contact" },
   ]
@@ -37,24 +36,23 @@ export function Navigation() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        isScrolled ? "bg-background/90 backdrop-blur-xl shadow-xl border-b border-border/50" : "bg-transparent"
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled ? "bg-background/90 backdrop-blur-xl shadow-xl border-b border-border/50" : "bg-transparent"
+        }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
+        <div className="flex justify-between items-center h-22">
           <Link href="/" className="flex items-center space-x-3 group">
             <div className="relative">
               <img
-                src="/spiral-pay-logo.png"
+                src="/logo.png"
                 alt="Spiral Pay"
-                className="h-12 w-auto group-hover:scale-105 transition-all duration-300"
+                className="h-38 md:h-48 pt-1 w-auto group-hover:scale-105 transition-all duration-300"
               />
-              <div className="absolute -inset-1 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-xl blur opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="absolute -inset-1 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-xl blur opacity-0 transition-opacity duration-300"></div>
             </div>
-            <span className="text-2xl font-black font-heading bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-transparent">
+            {/* <span className="text-2xl font-black font-heading bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-transparent">
               Spiral Pay
-            </span>
+            </span> */}
           </Link>
 
           {/* Desktop Navigation */}
@@ -86,50 +84,32 @@ export function Navigation() {
               </DropdownMenuContent>
             </DropdownMenu>
 
-            {user ? (
-              <DropdownMenu>
-                <DropdownMenuTrigger className="flex items-center text-foreground hover:text-primary transition-colors duration-300 font-semibold text-lg">
-                  {user.name} <ChevronDown className="ml-1 h-4 w-4" />
-                </DropdownMenuTrigger>
-                <DropdownMenuContent className="bg-background/95 backdrop-blur-xl border border-border/50">
-                  <DropdownMenuItem asChild>
-                    <Link href="/dashboard" className="font-medium">
-                      Dashboard
-                    </Link>
-                  </DropdownMenuItem>
-                  <DropdownMenuItem onClick={logout} className="font-medium">
-                    Logout
-                  </DropdownMenuItem>
-                </DropdownMenuContent>
-              </DropdownMenu>
-            ) : (
-              <div className="flex items-center space-x-4">
-                <Button
-                  variant="ghost"
-                  asChild
-                  className="text-lg font-semibold hover:bg-primary/10 transition-all duration-300"
-                >
-                  <Link href="/login">Login</Link>
-                </Button>
-                <Button
-                  asChild
-                  className="text-lg font-semibold px-6 py-3 bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
-                >
-                  <Link href="/register">Sign Up</Link>
-                </Button>
-              </div>
-            )}
+          </div>
+          <div className="hidden md:flex flex items-center space-x-4">
+            <Button
+              variant="ghost"
+              asChild
+              className="text-lg font-semibold hover:bg-primary/10 transition-all duration-300"
+            >
+              <Link href="https://pg.spiralpay.info">Login</Link>
+            </Button>
+            <Button
+              asChild
+              className="text-lg font-semibold px-6 py-3 bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+            >
+              <Link href="/contact">Sign Up</Link>
+            </Button>
           </div>
 
           {/* Mobile menu button */}
           <div className="md:hidden">
             <Button
               variant="ghost"
-              size="sm"
+              size='lg'
               onClick={() => setIsOpen(!isOpen)}
-              className="text-foreground hover:bg-primary/10 transition-all duration-300"
+              className="text-foreground bg-secondary/10 hover:bg-primary/10 transition-all duration-300"
             >
-              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              {isOpen ? <X className="h-10 w-10" /> : <Menu className="h-10 w-10" />}
             </Button>
           </div>
         </div>
@@ -158,36 +138,21 @@ export function Navigation() {
                 </Link>
               ))}
               <div className="px-4 py-4 space-y-3">
-                {user ? (
-                  <>
-                    <Button
-                      asChild
-                      className="w-full bg-transparent border-2 border-primary hover:bg-primary/10"
-                      variant="outline"
-                    >
-                      <Link href="/dashboard">Dashboard</Link>
-                    </Button>
-                    <Button onClick={logout} className="w-full" variant="ghost">
-                      Logout
-                    </Button>
-                  </>
-                ) : (
-                  <>
-                    <Button
-                      asChild
-                      className="w-full bg-transparent border-2 border-primary hover:bg-primary/10 font-semibold"
-                      variant="outline"
-                    >
-                      <Link href="/login">Login</Link>
-                    </Button>
-                    <Button
-                      asChild
-                      className="w-full bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 font-semibold shadow-lg"
-                    >
-                      <Link href="/register">Sign Up</Link>
-                    </Button>
-                  </>
-                )}
+                <>
+                  <Button
+                    asChild
+                    className="w-full bg-transparent border-2 border-primary hover:bg-primary/10 font-semibold"
+                    variant="outline"
+                  >
+                    <Link href="https://pg.spiralpay.info">Login</Link>
+                  </Button>
+                  <Button
+                    asChild
+                    className="w-full bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 font-semibold shadow-lg"
+                  >
+                    <Link href="/contact">Sign Up</Link>
+                  </Button>
+                </>
               </div>
             </div>
           </div>

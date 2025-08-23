@@ -20,7 +20,7 @@ export function BlogHero() {
   ]
 
   return (
-    <section className="relative pt-24 pb-20 gradient-bg overflow-hidden">
+    <section className="relative pt-28 pb-20 gradient-bg overflow-hidden">
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-96 h-96 bg-primary/15 rounded-full blur-3xl animate-pulse"></div>
         <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-secondary/15 rounded-full blur-3xl animate-pulse delay-1000"></div>
@@ -42,15 +42,15 @@ export function BlogHero() {
               <BookOpen className="h-5 w-5 text-primary" />
               <span className="text-base font-semibold text-primary">Knowledge Hub</span>
             </div>
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-black font-heading text-foreground mb-6 leading-tight">
-              <span className="block">PayFlow</span>
-              <span className="block bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
+            <h1 className="text-4xl md:text-5xl lg:text-5xl font-black font-heading text-foreground mb-6 leading-tight">
+              <span className="">Spiral Pay </span>
+              <span className=" bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
                 Blog
               </span>
             </h1>
           </div>
 
-          <p className="text-xl md:text-2xl lg:text-3xl text-muted-foreground mb-12 max-w-4xl mx-auto leading-relaxed font-medium">
+          <p className="text-xl md:text-2xl lg:text-2xl text-muted-foreground mb-12 max-w-4xl mx-auto leading-relaxed font-medium">
             Insights, tips, and updates from the world of payment processing and fintech innovation
           </p>
 
@@ -81,7 +81,7 @@ export function BlogHero() {
                     <stat.icon className="h-8 w-8 text-primary" />
                   </div>
                 </div>
-                <div className="text-3xl font-black text-primary mb-2">{stat.value}</div>
+                <div className="text-2xl font-black text-primary mb-2">{stat.value}</div>
                 <div className="text-base font-semibold text-muted-foreground">{stat.label}</div>
               </div>
             ))}

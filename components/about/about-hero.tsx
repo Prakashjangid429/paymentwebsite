@@ -25,7 +25,7 @@ export function AboutHero() {
   ]
 
   return (
-    <section className="relative pt-24 pb-20 gradient-bg overflow-hidden">
+    <section className="relative pt-32 pb-20 gradient-bg overflow-hidden">
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-96 h-96 bg-primary/15 rounded-full blur-3xl animate-pulse"></div>
         <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-secondary/15 rounded-full blur-3xl animate-pulse delay-1000"></div>
@@ -42,7 +42,7 @@ export function AboutHero() {
                 <Award className="h-4 w-4 text-primary" />
                 <span className="text-sm font-semibold text-primary">Since 2018</span>
               </div>
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-black font-heading text-foreground mb-6 leading-tight">
+              <h1 className="text-5xl md:text-5xl lg:text-5xl font-black font-heading text-foreground mb-6 leading-tight">
                 <span className="block">Revolutionizing</span>
                 <span className="block bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
                   Payment Processing
@@ -51,7 +51,7 @@ export function AboutHero() {
             </div>
 
             <p className="text-xl md:text-2xl text-muted-foreground mb-10 leading-relaxed font-medium">
-              Since 2018, PayFlow has been at the forefront of payment innovation, helping businesses of all sizes
+              Since 2018, Spiral Pay has been at the forefront of payment innovation, helping businesses of all sizes
               process payments securely, efficiently, and at scale.
             </p>
 
@@ -70,9 +70,9 @@ export function AboutHero() {
             <div className="relative">
               <div className="relative overflow-hidden rounded-3xl shadow-2xl">
                 <img
-                  src="/placeholder.svg?height=600&width=800"
-                  alt="PayFlow headquarters"
-                  className="w-full h-auto object-cover"
+                  src="/diverse-engineering-team.png"
+                  alt="Spiral Pay headquarters"
+                  className="w-full h-100 object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
               </div>
@@ -83,7 +83,7 @@ export function AboutHero() {
                     {React.createElement(stats[currentStat].icon, {
                       className: `h-8 w-8 ${stats[currentStat].color}`,
                     })}
-                    <div className="text-3xl font-black text-primary">{stats[currentStat].value}</div>
+                    <div className="text-2xl font-black text-primary">{stats[currentStat].value}</div>
                   </div>
                   <div className="text-base font-semibold text-muted-foreground">{stats[currentStat].label}</div>
                 </div>

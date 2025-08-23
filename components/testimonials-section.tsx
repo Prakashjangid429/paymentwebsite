@@ -31,7 +31,7 @@ export function TestimonialsSection() {
       content:
         "Spiral Pay transformed our business! UPI integration was seamless and our sales increased by 40%. The 4% fee is very competitive.",
       rating: 5,
-      avatar: "/indian-businessman-avatar.png",
+      avatar: "/placeholder-user.jpg",
     },
     {
       name: "Priya Patel",
@@ -54,7 +54,7 @@ export function TestimonialsSection() {
   ]
 
   return (
-    <section id="testimonials-section" className="py-20 bg-card">
+    <section id="testimonials-" className="py-20 bg-">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold font-heading text-card-foreground mb-4">
@@ -82,7 +82,7 @@ export function TestimonialsSection() {
                 <p className="text-card-foreground mb-6 leading-relaxed">"{testimonial.content}"</p>
                 <div className="flex items-center space-x-4">
                   <img
-                    src={testimonial.avatar || "/placeholder.svg"}
+                    src={"/placeholder-user.jpg"}
                     alt={testimonial.name}
                     className="w-12 h-12 rounded-full object-cover"
                   />

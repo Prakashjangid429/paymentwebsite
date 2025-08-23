@@ -3,16 +3,15 @@ import { ArrowRight, CheckCircle } from "lucide-react"
 
 export function CTASection() {
   const benefits = [
-    "Only 4% transaction fee - No hidden charges",
+    "Only 4.5% transaction fee - No hidden charges",
     "24/7 customer support in Hindi & English",
-    "Easy integration in 15 minutes",
-    "RBI authorized & PCI DSS compliant",
+    "Easy integration in 15 minutes","100% trust"
   ]
 
   return (
     <section className="py-20 bg-gradient-to-r from-primary to-secondary">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold font-heading text-primary-foreground mb-6">
             Ready to Accept UPI & Digital Payments?
           </h2>
@@ -49,7 +48,7 @@ export function CTASection() {
           </div>
 
           <p className="text-sm text-primary-foreground/70 mt-6">
-            No setup fee • Cancel anytime • RBI authorized payment gateway
+            No setup fee • Cancel anytime
           </p>
         </div>
       </div>

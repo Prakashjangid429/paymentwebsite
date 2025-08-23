@@ -31,7 +31,7 @@ export function TeamHero() {
   ]
 
   return (
-    <section className="relative pt-24 pb-20 gradient-bg overflow-hidden">
+    <section className="relative pt-28 pb-20 gradient-bg overflow-hidden">
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-96 h-96 bg-primary/15 rounded-full blur-3xl animate-pulse"></div>
         <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-secondary/15 rounded-full blur-3xl animate-pulse delay-1000"></div>
@@ -55,16 +55,16 @@ export function TeamHero() {
               })}
               <span className="text-base font-semibold text-primary">{companyValues[currentValue].text} Team</span>
             </div>
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-black font-heading text-foreground mb-6 leading-tight">
-              <span className="block">Meet Our</span>
-              <span className="block bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
+            <h1 className="text-4xl md:text-5xl lg:text-5xl font-black font-heading text-foreground mb-6 leading-tight">
+              <span className="">Meet Our </span>
+              <span className=" bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
                 Amazing Team
               </span>
             </h1>
           </div>
 
-          <p className="text-xl md:text-2xl lg:text-3xl text-muted-foreground mb-16 max-w-4xl mx-auto leading-relaxed font-medium">
-            The passionate people behind PayFlow who are dedicated to revolutionizing payment processing and helping
+          <p className="text-xl md:text-2xl lg:text-2xl text-muted-foreground mb-16 max-w-4xl mx-auto leading-relaxed font-medium">
+            The passionate people behind Spiral Pay who are dedicated to revolutionizing payment processing and helping
             businesses succeed worldwide.
           </p>
 
@@ -72,9 +72,9 @@ export function TeamHero() {
             {teamStats.map((stat, index) => (
               <div
                 key={index}
-                className="text-center p-8 bg-card/50 backdrop-blur-sm rounded-2xl border border-border hover:border-primary/50 transition-all duration-300 hover:scale-105"
+                className="text-center p-6 bg-card/50 backdrop-blur-sm rounded-2xl border border-border hover:border-primary/50 transition-all duration-300 hover:scale-105"
               >
-                <div className="text-5xl font-black text-primary mb-4">{stat.value}</div>
+                <div className="text-3xl font-black text-primary mb-4">{stat.value}</div>
                 <div className="text-lg font-semibold text-muted-foreground">{stat.label}</div>
               </div>
             ))}

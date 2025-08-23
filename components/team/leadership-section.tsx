@@ -78,7 +78,7 @@ export function LeadershipSection() {
             >
               <CardContent className="p-6 text-center">
                 <img
-                  src={leader.image || "/placeholder.svg"}
+                  src={"/placeholder-user.jpg"}
                   alt={leader.name}
                   className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
                 />
