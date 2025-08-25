@@ -33,6 +33,7 @@ export default function ContactPage() {
     }))
   }
 
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-background to-secondary/20">
       {/* Hero Section */}
