@@ -42,7 +42,7 @@ html {
 }
         `}</style>
       </head>
-      <body className={`${montserrat.variable} ${openSans.variable} className={`antialiased`}>
+      <body className={`${montserrat.variable} ${openSans.variable} antialiased`}>
         <AuthProvider>
           <Navigation />
           <main>{children}</main>
